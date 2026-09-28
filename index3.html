@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<HTML lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Etiquetas semánticas y de Formato de texto 2 </title>
+    <meta name="author" content="Manzano Solis Nelli Yareni">
+
+
+</head>
+
+<body>
+    <h2>Cómo citar con semántica en HTML</h2>
+	<!-- citas cortas -->
+
+    <p>Como dijo un sabio: "Yo solo sé que no sé nada" -Sabio</p>
+    <p>Como dijo un sabio: <q>Yo solo sé que no sé nada</q> -Sabio</p>
+
+    <!-- citas largas -->
+
+    <p>Como dijo un sabio:</p>
+    <blockquote>
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia sit, harum enim voluptas debitis eum rerum asperiores. Recusandae eaque ipsam consequatur reprehenderit veritatis harum odio ad ab, veniam consequuntur!""
+    </blockquote>
+    <p>-Sabio</p>
+
+    <p>Y otro dijo</p>
+    <blockquote>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis officia, ea numquam accusamus asperiores nesciunt doloremque perferendis soluta vel odit corporis ipsum distinctio. Quae, id sunt harum nemo repellendus modi doloremque aut officia dicta eum reiciendis numquam voluptas expedita. Et aliquid molestiae blanditiis dolorum! Eaque commodi, quas laboriosam error dolor repellendus possimus explicabo quia qui aut veniam et. In quos odit praesentium maxime perspiciatis molestias est unde, magni numquam blanditiis.
+    </blockquote>
+
+    <hr>
+
+    <h2>Saltos de línea y reglas horizontales</h2>
+
+    <p>Este es el primer párrafo <br><br>Este es el segundo párrafo <br>Este es el tercer párrafo</p>
+    <hr>
+    <h2>Visualización y formato de código</h2>
+    <p>Cuando nosotros implementamos <code>print("Hola Mundo")</code> en python, la salida en consola será: <code>Hola Mundo</code></p>
+    <h3>Visualización de código en varias líneas</h3>
+    <p>Este programa suma los números en python</p>
+    <pre>
+        #suma de 2 números
+            a=5
+            b=6
+            print(a+b)
+    </pre>
+
+    <p>Este código imprime un hola mundo en HTML</p>
+    <!-- Para escribir caracteres especiales como nuestras etiquetas de apertura y de cierre
+     <> se utilizan las entidades HTML que permiten avisar al navegador que vamos a utilizar un 
+     símbolo específico -->
+    <pre>
+        &lt;body&gt;
+            &lt;h1&gt;Hola Mundo&lt;h1&gt;
+        &lt;body&gt;
+    </pre>
+
+    <hr>
+    <p>
+        Para representar la entrada de teclado(teclas) 
+        se utiliza la etiqueta <code> &lt;kbd&gt;&lt;/kbd&gt;</code>
+    </p>
+    <p>
+        Para copiar el texto de un archivo, utilizamos la combinació
+        de teclas <kbd>CTRL</kbd> + <kbd> C </kbd>
+    </p>
+
+
+</body>
+</html>
