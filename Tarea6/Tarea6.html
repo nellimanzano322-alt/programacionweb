@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="author" content="Nelli Yareni Manzano Solis">
+</head>
+<body>
+    <h3>Listas y Formularios</h3>
+    <h1>Listas</h1>
+    <div>
+        <h3>Listas no ordenadas</h3>
+        <ul>
+            <li>carne</li>
+            <li>papel</li>
+            <li>verduras</li>
+            <li>leche</li>
+            <li>aceite</li>
+        </ul>
+    </div>
+    <!-- i = numeros romanos en minúscula, I = romanoes en mayúscula, 1 = decimal -->
+    <div>
+        <h3>Listas ordenadas</h3>
+        <ol type="1">
+            <li>primero</li>
+            <li>segundo</li>
+            <li>tercero</li>
+            <li>cuarto</li>
+            <li>quinto</li>
+        </ol>
+        <ol type="I" start="10">
+            <li>primero</li>
+            <li>segundo</li>
+            <li>tercero</li>
+            <li>cuarto</li>
+            <li>quinto</li>
+        </ol>
+        <ol type="I" start="10" reversed>
+            <li>primero</li>
+            <li>segundo</li>
+            <li>tercero</li>
+            <li>cuarto</li>
+            <li>quinto</li>
+        </ol>
+    </div>
+    <div>
+        <h3>Listas de definiciones</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Lenguaje de marcado de hipertexto</dd>
+            <dt>CSS</dt>
+            <dd>Hoja de estilos de cascada</dd>
+            <dt>JS</dt>
+            <dd>JavaScript</dd>
+            </dt>
+        </dl>
+        <h3>Listas anidadas</h3>
+        <p>Desarrollo web</p>
+        <ul>
+            <li>Front-End
+                <ol type="I">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ol>
+            </li>
+            <li>Back-End
+                <ol type="A">
+                    <li>NodeJS</li>
+                    <li>SQL</li>
+                    <li>ArchLinux</li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h2>FORMULARIOS</h2>
+        <h3>Formulario de inicio de sesión</h3>
+        <!-- vscodepokemon -->
+         <form action="validar.js" method="post">
+            <!-- action tambien puede ser una ruta action="/inicio_sesion" -->
+            <label for="username">Nombre de Usuario</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password" required placeholder="minimo 8 caracteres">
+            <!-- si cambiamos el type de text a password aparece censurada -->
+            <br>
+            <button type="submit">Ingresar</button>
+         </form>
+         <h3>Formulario con campo de entrada de varias lineas</h3>
+         <form actions="validar.js" method="post">
+            <label for="username">Nombre de Usuario</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="opinion">Comentarios</label>
+            <textarea name="opinion" id="opinion" placeholder="Tu opinion es muy importante " required rows="5" cols="40"></textarea>
+            <button type="submit">Enviar comentario</button>
+        </form>
+        <hr>
+        <h3>Formulario con una lista despegable de opciones</h3>
+        <form action="/opciones" method="post"></form>
+        <label for="bebidas">Bebidas:</label>
+        <select name="bebidas" id="bebidas">
+            <option value="Coca-Cola">Coca-Cola</option>
+            <option value="Boing">Boing</option>
+            <option value="Pepsi">Pepsi</option>
+            <option value="te">te</option>
+            <option value="Jarrito" selected>Jarrito</option>
+        </select>
+        <br>
+        <label for="postres">Postres:</label>
+        <select name="postres" id="postres">
+            <option value="" selected disabled >Selecciona un postre</option>   
+            <option value="Pay de limon">Pay de limon</option>
+            <option value="Flan">Flan</option>
+            <option value="Fresas con crema">Fresas con crema</option>
+            <option value="Gelatina">Gelatina</option>
+            <option value="Pay de fresa">Pay de fresa</option>
+            </select>
+            <br>
+            <input type="submit">
+            <form>
+                <h3>Formulario con distintos campos de datos</h3>
+                <form action="datos.php " method="post">
+                    <fieldset>
+                        <legend>Nombre completo </legend>
+                        <label for="nombre "> Nombre:</label>
+                        <input type="text" id="nombre " name="nombre " required>
+                        <br>
+                        <label for="apellido_paterno "> Apellido paterno:</label>
+                        <input type="text" id="nombre " name="nombre " required>
+                         <br>
+                        <label for="apellido_materno "> Apellido materno:</label>
+                        <input type="text" id="nombre " name="nombre " required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Otros datos: </legend>
+                        <label for="fecha_de_nacimiento "> Fecha de nacimiento:</label>
+                        <input type="date" id="fecha_de_nacimiento " name="fecha_de_nacimiento " required>
+                        <br>
+                        <label for="edad "> Edad :</label>
+                        <input type="number" id="edad " name="edad " required min="18" max="90">
+                        <br>
+                        <label for="numero_de_cuenta "> Numero de cuenta :</label>
+                        <input type="text" id="numero_de_cuenta " name="numero_de_cuenta " minlength="9" maxlength="9" required pattern="[0-9]{9}" placeholder="usar nueve numeros">
+                        <br>
+                        <label for="email "> Correo electronico:</label>
+                        <input type="email" id="correo_electronico " name="correo_electronico " required>
+                    </fieldset>
+                    <button type="submit">Enviar formulario</button>
+            </form>
+        </div>
+</body>
+</html>
