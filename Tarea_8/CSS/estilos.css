@@ -1,0 +1,18 @@
+/* Estilos para un selector de elemento */
+h2{
+    color:hotpink
+}
+/* Estilos para un selector de clase */
+.color-h2{
+    color: indianred;
+}
+/* Estilos para un selector de id */
+#color-h1{
+    color: deeppink;
+}
+.color-estilosinternos{
+    color:blueviolet
+}
+#bg-header{
+    background-color: #776cdd;
+}
