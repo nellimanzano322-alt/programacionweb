@@ -1,0 +1,46 @@
+/*Modelo RGB*/
+.rgb{
+    background-color: rgb(39, 240, 230);
+    color:rgb(0, 0, 0)
+}
+ .rgb h3{
+    color:rgb(0, 0, 0)
+}
+ .rgba{
+    background-color: rgb(219,70,70,0.5);
+    color:rgb(0,0,0)
+}
+ .hex{
+    background-color: #208877;
+    color:#000000
+}
+ .hsl{
+    background-color:hsla(278, 72%, 25%, 0.712);
+    color:hsl(0, 0%, 100%)
+ }
+ .hsla{
+    background-color:hsla(241, 73%, 29%, 0.712);
+    color:hsl(0, 0%, 100%)
+ }
+ .borde{
+    /* border-style: solid;
+    border-color: red;
+    border-width: 2px;
+    se puede poner propiedad por propiedad o todo en una linea ordenado en ancho, estilo y color */
+    border: 10px dotted rgb(252, 186, 186);
+}
+
+
+.borde-interno{
+    border: 2px solid rgb(247, 255, 137);
+}
+
+/*degradados*/
+
+.lineal{
+    background-image: linear-gradient(to top, rgb(0, 255, 115), rgb(37, 192, 133));
+}
+
+.radial{
+    background-image: radial-gradient(circle, violet,rgb(238, 71, 154));
+}
