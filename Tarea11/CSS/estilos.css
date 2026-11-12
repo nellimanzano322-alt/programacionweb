@@ -1,0 +1,87 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#encabezado{
+    background-color: black;
+    color: rgb(147, 62, 212);
+    /*El relleno o padding: 
+    - Espacio entre el contenido del elemento y su borde.
+    - Se aplican los valores en sentido horario: top, right, bottom, left.
+    1valor:t,r,g,l 2valores:tb,rl 3valores:t,rl,b
+    */
+    padding:15px;
+    /* Margen Es el espacio que hay entre un elemento html y el resto de los elementos html a su alrededor*/
+    margin: 15px 5px;
+    /* El borde es el contorno visual alrededor de nuestro eloemento HTML (dentro de el podemos encontrar el contenido del elemento y su relleno ) 
+    valores (solid, dotted, dash, double, groove, ridge, inset, outset, hidden y none)*/
+    border: 15px ridge rgb rgb(0, 255, 200);
+    border-top-style: double;
+    border-left-color: crimson;
+    border-right-color: darkcyan;
+    border-bottom-width: 15px;
+    border-radius: 15%;
+    /*Se puede utilizar para crear efectos de sombra alrededor del borde de un elemento se deben especificar los valores:
+    Desplazamiento horizontal, Desplazamiento-vertical, radio de desenfoque , radio de propagacion y color*/
+    box-shadow: 5px 5px 5px 5px rgb(255, 0, 0);
+}
+#encabezado h1{
+    text-decoration: underline;
+}
+.introduccion{
+    color:rgb(217, 255, 0);
+    border: 2px solid gold;
+    background-color: black;
+    padding: 5 px;
+
+}
+.introduccion p{
+    width : 300px;
+    height : 150px;
+    padding: 5px;
+    border: 2px dotted gold;
+    box-sizing: border-box;
+
+}
+.introduccion span{
+    width: 300px;
+    height: 200px;
+    border: 2px dotted rgb(212, 62, 174);
+    padding: 10px;
+    margin: 50px;
+}
+.texto-fuente{
+    background-color: rgb(8, 220, 235);
+    color: 2px solid blue;
+}
+.propiedades-texto h2{
+    border: 5px solid blue;
+    padding: 5px;
+    text-align:center;
+    text-transform: uppercase;
+    text-decoration: line-through;
+    text-shadow: 2px 2px 3px gray;
+}
+.propiedades-texto p{
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+.propiedades-fuentes h2{
+    padding: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 3px purple;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-family: nombredefuenteexterna;
+}
+.propiedades-fuentes p{
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-weight: bolder;
+    font-style: oblique;
+}
